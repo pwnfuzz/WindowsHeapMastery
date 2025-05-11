@@ -1,0 +1,3 @@
+# Changelog
+
+- Initial project skeleton
