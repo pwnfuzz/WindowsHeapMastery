@@ -49,6 +49,11 @@ typedef struct _LIST_ENTRY {
 In the context of Windows heap, lists of blocks (e.g., free blocks, allocated blocks, segments) are often implemented using `_LIST_ENTRY` structures. These lists can be traversed in both directions, providing efficient insertion and removal of elements, which is essential for memory management.
 
 ```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
 graph LR
     A[First Entry] --> B[Second Entry]
     B --> C[Third Entry]
