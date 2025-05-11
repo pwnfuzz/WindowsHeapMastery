@@ -35,9 +35,9 @@ This repository is part of the **debut initiative from [PwnFuzz](https://pwnfuzz
 - [References](./docs/references.md) – External whitepapers, blogs, and Microsoft docs
 
 ### 🔬 Heap Internals (`/internals`)
-- [NT Heap](./internals/nt_heap/) – Internal structures, backend/virtual allocations
-- [Segment Heap](./internals/segment_heap/) – Segment tree layout, metadata, frontend vs backend
-- [LFH (Low Fragmentation Heap)](./internals/lfh/) – Buckets, subsegment caching, frontend logic
+- [NT Heap](./internals/nt_heap.md) – Internal structures, backend/virtual allocations
+- [Segment Heap](./internals/segment_heap.md) – Segment tree layout, metadata, frontend vs backend
+- [LFH (Low Fragmentation Heap)](./internals/lfh.md) – Buckets, subsegment caching, frontend logic
 
 ### 🛡️ Mitigations (`/mitigations`)
 - [Global Mitigations](./mitigations/global.md) – DEP, ASLR, CFG, GS
