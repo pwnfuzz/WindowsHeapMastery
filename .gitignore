@@ -3,3 +3,10 @@
 *.pdb
 __pycache__/
 *.pyc
+# Ignore everything in exploits/
+exploits/*
+
+# But do not ignore directories (so we can reach .cpp files inside them)
+!exploits/**/
+# Include all .cpp files
+!exploits/**/*.cpp
