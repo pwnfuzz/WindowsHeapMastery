@@ -22,60 +22,10 @@ This repository is part of the **debut initiative from [PwnFuzz](https://pwnfuzz
 
 ## Table of Contents
 
-### Project Docs
+### Heap Internals Breakdown
 
-- [README.md](./README.md) – Project introduction, usage, and structure
-- [SCOPE.md](./SCOPE.md) – Defined boundaries and supported platforms
-
-### Documentation (`/docs`)
-
-- [Overview](./docs/overview.md) – Introduction to heap concepts and allocator hierarchy
-- [Glossary](./docs/glossary.md) – Definitions of key terms used throughout the project
-- [References](./docs/references.md) – External whitepapers, blogs, and Microsoft docs
-
-### Heap Internals (`/internals`)
-
-- [NT Heap](./internals/nt_heap.md) – Internal structures, backend/virtual allocations
-- [Segment Heap](./internals/segment_heap.md) – Segment tree layout, metadata, frontend vs backend
-- [LFH (Low Fragmentation Heap)](./internals/lfh.md) – Buckets, subsegment caching, frontend logic
-
-### Mitigations (`/mitigations`)
-
-- [Global Mitigations](./mitigations/global.md) – DEP, ASLR, CFG, GS
-- [NT Heap Specific](./mitigations/nt_heap.md)
-- [Segment Heap Specific](./mitigations/segment_heap.md)
-- [LFH Specific](./mitigations/lfh.md)
-
-### Allocation Behaviors (`/allocation_behaviors`)
-
-- [HeapAlloc vs malloc](./allocation_behaviors/heapalloc_vs_malloc.md)
-- [HeapCreate + HeapFree Lifecycle](./allocation_behaviors/heapcreate_flow.md)
-- [Front-end vs Back-end handling](./allocation_behaviors/frontend_backend.md)
-
-### Exploitation Techniques (`/exploitation_techniques`)
-
-- [Heap Overflows](./exploitation_techniques/heap_overflow.md)
-- [Use-After-Free](./exploitation_techniques/uaf.md)
-- [Front-end Bucket Corruption](./exploitation_techniques/lfh_corruption.md)
-- [Freelist Attacks](./exploitation_techniques/freelist.md)
-- [Bypassing LFH with Fake Subsegments](./exploitation_techniques/lfh_bypass.md)
-- [Segment Heap Exploits](./exploitation_techniques/segment_bypass.md)
-
-### Proof-of-Concepts (`/pocs`)
-
-- [Use-After-Free PoCs](./pocs/uaf/)
-<!-- - [Heap Overflow PoCs](./pocs/overflow/)
-- [Heap Spray Templates](./pocs/heap_spray/) -->
-
-<!-- ### Tooling (`/tools`)
-- [WinDbg Scripts](./tools/windbg/) – Automation for debugging
-- [Heap Visualizer (WIP)](./tools/visualizer/) – Interactive heap memory maps
-
-### Notes (`/notes`)
-- [Roadmap](./notes/roadmap.md)
-- [Changelog](./notes/changelog.md)
-- [Dev Notes](./notes/dev_log.md) -->
-
+- [**Overview**](./internals/overview.md)
+- [**NTHeap**](./internals/nt_heap.md)
 ---
 
 ## Audience & Use Cases
